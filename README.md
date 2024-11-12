@@ -1,5 +1,5 @@
 # Simple Tiers Component
-A React component for displaying user progression through different tiers based on XP points. Built with Next.js, Tailwind CSS, and shadcn/ui.
+A React component for displaying user progression through different tiers based on points. Built with Next.js, Tailwind CSS, and shadcn/ui.
 
 ## Features
 - 🎯 Configurable tier levels
@@ -25,7 +25,7 @@ NEXT_PUBLIC_PRIVY_APP_ID=your_privy_app_id_here
 ## Deploy
 Instantly deploy your own copy of the template using Vercel or Netlify:
 
-([![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdan-th3-man%2Fsimple-tiers-comp&env=OPENFORMAT_API_KEY,OPENFORMAT_DAPP_ID,NEXT_PUBLIC_PRIVY_APP_ID)) [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dan-th3-man/simple-tiers-comp)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdan-th3-man%2Fsimple-tiers-comp&env=OPENFORMAT_API_KEY,OPENFORMAT_DAPP_ID,NEXT_PUBLIC_PRIVY_APP_ID) [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dan-th3-man/simple-tiers-comp)
 
 ## Usage
 1. Start the development server:
