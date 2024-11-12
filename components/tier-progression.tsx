@@ -89,9 +89,13 @@ export function TierProgressionComponent({ walletAddress }: { walletAddress: str
 
   if (isLoading) {
     return (
-      <Card className="w-full p-8 rounded-lg shadow-sm relative">
+      <Card className={cn(
+        "w-full p-8 rounded-lg relative",
+        "dark:bg-black/40 dark:backdrop-blur-sm dark:border-white/10 dark:shadow-xl",
+        "bg-white/80 border-black/5 shadow-lg"
+      )}>
         <div className="flex items-center justify-center h-40">
-          <div className="animate-pulse">Loading...</div>
+          <div className="animate-pulse text-muted-foreground">Loading...</div>
         </div>
       </Card>
     )
@@ -99,7 +103,11 @@ export function TierProgressionComponent({ walletAddress }: { walletAddress: str
 
   if (error) {
     return (
-      <Card className="w-full p-8 rounded-lg shadow-sm relative">
+      <Card className={cn(
+        "w-full p-8 rounded-lg relative",
+        "dark:bg-black/40 dark:backdrop-blur-sm dark:border-white/10 dark:shadow-xl",
+        "bg-white/80 border-black/5 shadow-lg"
+      )}>
         <div className="flex flex-col items-center justify-center h-40 gap-2">
           <div className="text-destructive font-medium">Failed to load profile data</div>
           <div className="text-sm text-muted-foreground">{error}</div>
@@ -141,6 +149,9 @@ export function TierProgressionComponent({ walletAddress }: { walletAddress: str
                 <>
                   <span className="text-sm text-muted-foreground">Current Tier:</span>
                   <Badge className={`text-white ${currentTier.color}`}>{currentTier.name}</Badge>
+                  <span className="text-xs text-muted-foreground">
+                    ({currentPoints.toLocaleString()} points)
+                  </span>
                 </>
               ) : (
                 <span className="text-sm text-muted-foreground">
@@ -165,7 +176,7 @@ export function TierProgressionComponent({ walletAddress }: { walletAddress: str
                 {currentTier 
                   ? pointsRemaining === 0 
                     ? currentPoints >= tiers[tiers.length - 1].pointsRequired 
-                      ? `Max tier reached (${currentPoints} XP)` 
+                      ? `Max tier reached (${currentPoints} points)` 
                       : "Max tier reached"
                     : `${pointsRemaining} points to ${nextTier.name}`
                   : `${tiers[0].pointsRequired - currentPoints} points to ${tiers[0].name}`
