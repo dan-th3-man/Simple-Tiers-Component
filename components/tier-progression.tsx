@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { fetchUserProfile } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
-
+// EDIT AS NEEDED
 const tiers: { name: string; pointsRequired: number; color: string }[] = [
   {
     "name": "Amateur",
