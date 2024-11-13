@@ -36,7 +36,7 @@ Instantly deploy your own copy of the template using Vercel or Netlify, using th
 1. Clone the repository:
 ```
 git clone https://github.com/open-format/on-chain-tiers.git
-cd simple-tiers-comp
+cd on-chain-tiers
 ```
 
 2. Install dependencies:
