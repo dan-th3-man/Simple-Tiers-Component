@@ -91,7 +91,7 @@ export function TierProgressionComponent({ walletAddress }: { walletAddress: str
     return (
       <Card className={cn(
         "w-full p-8 rounded-lg relative",
-        "dark:bg-black/40 dark:backdrop-blur-sm dark:border-white/10 dark:shadow-xl",
+        "dark:!bg-black/40 dark:!backdrop-blur-sm dark:!border-white/10 dark:!shadow-xl",
         "bg-white/80 border-black/5 shadow-lg"
       )}>
         <div className="flex items-center justify-center h-40">
@@ -105,7 +105,7 @@ export function TierProgressionComponent({ walletAddress }: { walletAddress: str
     return (
       <Card className={cn(
         "w-full p-8 rounded-lg relative",
-        "dark:bg-black/40 dark:backdrop-blur-sm dark:border-white/10 dark:shadow-xl",
+        "dark:!bg-black/40 dark:!backdrop-blur-sm dark:!border-white/10 dark:!shadow-xl",
         "bg-white/80 border-black/5 shadow-lg"
       )}>
         <div className="flex flex-col items-center justify-center h-40 gap-2">
@@ -129,7 +129,7 @@ export function TierProgressionComponent({ walletAddress }: { walletAddress: str
   return (
     <Card className={cn(
       "w-full p-8 rounded-lg relative",
-      "dark:bg-black/40 dark:backdrop-blur-sm dark:border-white/10 dark:shadow-xl",
+      "dark:!bg-black/40 dark:!backdrop-blur-sm dark:!border-white/10 dark:!shadow-xl",
       "bg-white/80 border-black/5 shadow-lg"
     )}>
       <div className="absolute top-4 right-4">

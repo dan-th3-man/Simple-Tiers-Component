@@ -94,9 +94,9 @@ pnpm dev
 
 | Variable | Required | Example | Description |
 |----------|----------|----------|-------------|
-| NEXT_PUBLIC_PRIVY_APP_ID | Yes | cgg24234jq2373ryhfdgutpc | Your [Privy](https://www.privy.io/) application ID |
-| OPENFORMAT_API_KEY | Yes | b315346c-d43b-4b37-aee9-621g415b8e | Your [Open Format](https://app.openformat.tech/) API Key |
-| OPENFORMAT_DAPP_ID | Yes | 0x0747d8a6e9684206e82aef757956c | Your [Open Format](https://app.openformat.tech/) dApp ID |
+| NEXT_PUBLIC_PRIVY_APP_ID | Yes | cgg24234jq2373ryehutpc | Your [Privy](https://www.privy.io/) application ID |
+| OPENFORMAT_API_KEY | Yes | b315346c-d43b-4b37-aee9-6dg415b8e | Your [Open Format](https://app.openformat.tech/) API Key |
+| OPENFORMAT_DAPP_ID | Yes | 0x0747d8a6e968422a4e506e820f757956c | Your [Open Format](https://app.openformat.tech/) dApp ID |
 
 ## Contributing 
 Contributions are welcome! Please open an issue or submit a pull request. If you have any questions, feel free to reach out at [dan@openformat.tech](mailto:dan@openformat.tech)

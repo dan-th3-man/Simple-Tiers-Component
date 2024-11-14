@@ -40,32 +40,30 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
     transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+    --progress-background: 271 20% 96%;
+    --progress-foreground: 271 91% 65%;
   }
-  .dark {
+  
+  :root[class~="dark"] {
     --background: 0 0% 0%;
-    --foreground: 213 31% 91%;
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
-    --popover: 224 71% 4%;
-    --popover-foreground: 213 31% 91%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
     --primary: 271 91% 65%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 271 40% 15%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 271 40% 15%;
-    --muted-foreground: 271 10% 75%;
-    --accent: 271 40% 15%;
-    --accent-foreground: 0 0% 98%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 271 40% 15%;
-    --input: 271 40% 15%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
     --ring: 271 91% 65%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
   }
 
   /* Add transitions for all background-color based elements */
@@ -89,8 +87,63 @@ body {
   }
 }
 
+/* Force dark mode styles */
+:root[class~="dark"] body {
+  background-color: black;
+  color: white;
+}
+
+:root[class~="dark"] .card {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+:root[class~="dark"] .text-muted-foreground {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Update progress bar styles */
+:root[class~="dark"] progress {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+:root[class~="dark"] progress::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+:root[class~="dark"] progress::-webkit-progress-value {
+  background-color: hsl(var(--primary)) !important;
+}
+
+:root[class~="dark"] progress::-moz-progress-bar {
+  background-color: hsl(var(--primary)) !important;
+}
+
 html,
 body,
 :root {
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+@layer components {
+  progress {
+    background-color: hsl(var(--progress-background));
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: hsl(var(--progress-background));
+    border-radius: var(--radius);
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: hsl(var(--progress-foreground));
+    border-radius: var(--radius);
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: hsl(var(--progress-foreground));
+    border-radius: var(--radius);
+  }
 }
