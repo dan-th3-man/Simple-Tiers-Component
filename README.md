@@ -30,7 +30,7 @@ Before you begin, you'll need to set up accounts and configure the following:
 ### Deploy
 Instantly deploy your own copy of the template using Vercel or Netlify, using the template tiers.json file:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdan-th3-man%2Fsimple-tiers-comp&env=OPENFORMAT_API_KEY,OPENFORMAT_DAPP_ID,NEXT_PUBLIC_PRIVY_APP_ID) [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dan-th3-man/simple-tiers-comp)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdan-th3-man%2Fon-chain-tiers&env=OPENFORMAT_API_KEY,OPENFORMAT_DAPP_ID,NEXT_PUBLIC_PRIVY_APP_ID) [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dan-th3-man/on-chain-tiers)
 
 ### Local Development
 1. Clone the repository:
@@ -94,11 +94,11 @@ pnpm dev
 
 | Variable | Required | Example | Description |
 |----------|----------|----------|-------------|
-| NEXT_PUBLIC_PRIVY_APP_ID | Yes | cgg24234jq2373ryeh719gutpc | Your [Privy](https://www.privy.io/) application ID |
-| OPENFORMAT_API_KEY | Yes | b315346c-d43b-4b37-aee9-621fgdg415b8e | Your [Open Format](https://app.openformat.tech/) API Key |
-| OPENFORMAT_DAPP_ID | Yes | 0x0747d8a6e968422a4e506e820f51efaef757956c | Your [Open Format](https://app.openformat.tech/) dApp ID |
+| NEXT_PUBLIC_PRIVY_APP_ID | Yes | cgg24234jq2373ryhfdgutpc | Your [Privy](https://www.privy.io/) application ID |
+| OPENFORMAT_API_KEY | Yes | b315346c-d43b-4b37-aee9-621g415b8e | Your [Open Format](https://app.openformat.tech/) API Key |
+| OPENFORMAT_DAPP_ID | Yes | 0x0747d8a6e9684206e82aef757956c | Your [Open Format](https://app.openformat.tech/) dApp ID |
 
 ## Contributing 
-Contributions are welcome! Please open an issue or submit a pull request.
+Contributions are welcome! Please open an issue or submit a pull request. If you have any questions, feel free to reach out at [dan@openformat.tech](mailto:dan@openformat.tech)
 
 ![Dark Mode Tier Progress](./assets/dark-mode.PNG)
